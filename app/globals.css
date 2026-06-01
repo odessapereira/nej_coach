@@ -1,26 +1,25 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sable: #F0EBE1;
+  --sable-dark: #E4DDD3;
+  --brun: #1C1612;
+  --rose: #C9938A;
+  --rose-light: #E8C4BE;
+  --rose-pale: #F5EBE8;
+  --muted: #8A7B72;
+  --blanc: #FDFAF7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--sable);
+  color: var(--brun);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
 }
