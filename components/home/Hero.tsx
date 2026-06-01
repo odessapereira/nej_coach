@@ -25,6 +25,7 @@ export default function Hero() {
         display: "grid",
         gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
         minHeight: "88vh",
+        overflowX: "hidden"
       }}>
         <div style={{
           padding: isMobile ? "6rem 1.5rem 3rem" : "5rem 3rem 4rem",
@@ -35,7 +36,7 @@ export default function Hero() {
             Coaching féminin · Sur mesure
           </div>
 
-          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: isMobile ? "3.5rem" : "clamp(4rem, 6.5vw, 6.5rem)", fontWeight: 800, lineHeight: 0.92, textTransform: "uppercase", marginBottom: "1.8rem" }}>
+          <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: isMobile ? "2.8rem" : "clamp(4rem, 6.5vw, 6.5rem)", fontWeight: 800, lineHeight: 0.92, textTransform: "uppercase", marginBottom: "1.8rem" }}>
             SE REPRENDRE<br />EN MAIN,<br />
             <em style={{ fontStyle: "italic", color: "var(--rose)", fontWeight: 700 }}>VRAIMENT.</em>
           </h1>
