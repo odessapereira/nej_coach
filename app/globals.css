@@ -23,3 +23,129 @@ body {
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+  nav {
+    padding: 1rem 1.5rem !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 50 !important;
+  }
+
+  nav ul {
+    display: none !important;
+  }
+
+  /* ===== HERO ===== */
+  section:has(> div > h1) {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  /* ===== GLOBAL SECTIONS ===== */
+  section, main > section {
+    padding: 3rem 1.5rem !important;
+  }
+
+  main {
+    padding-top: 4rem !important;
+  }
+
+  /* ===== GRIDS 2 COLONNES → 1 ===== */
+  section > div[style*="grid-template-columns: 1fr 1fr"],
+  section[style*="grid-template-columns: 1fr 1fr"],
+  section[style*="grid-template-columns: repeat(2"],
+  div[style*="grid-template-columns: 1fr 1fr"],
+  div[style*="grid-template-columns: repeat(2"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* ===== GRIDS 3 COLONNES → 1 ===== */
+  div[style*="grid-template-columns: repeat(3"],
+  section[style*="grid-template-columns: repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ===== STATS ===== */
+  div[style*="grid-template-columns: repeat(3, 1fr)"] > div {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(28,22,18,0.1) !important;
+    padding: 1.2rem 1.5rem !important;
+  }
+
+  /* ===== HERO PHOTO ===== */
+  div[style*="objectFit"] {
+    display: none !important;
+  }
+
+  /* ===== BOUTONS HERO ===== */
+  div[style*="display: flex"][style*="gap: 1rem"][style*="alignItems: center"] {
+    flex-direction: column !important;
+  }
+
+  div[style*="display: flex"][style*="gap: 1rem"][style*="alignItems: center"] a {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* ===== CTA BAND ===== */
+  section[style*="justifyContent: space-between"][style*="background: var(--brun)"] {
+    flex-direction: column !important;
+    text-align: center !important;
+    margin: 0 0 3rem !important;
+    padding: 3rem 1.5rem !important;
+    gap: 2rem !important;
+  }
+
+  /* ===== PROGRAMMES GRILLE ===== */
+  section[style*="grid-template-columns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* ===== A PROPOS ===== */
+  section[style*="minHeight: \"70vh\""] {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  /* Cache la colonne déco (le N géant) */
+  div[style*="fontSize: \"16rem\""] {
+    display: none !important;
+  }
+
+  /* ===== FORMATIONS ===== */
+  div[style*="grid-template-columns: 1fr 1fr"][style*="gap: 4rem"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* ===== QUESTIONNAIRE ===== */
+  div[style*="grid-template-columns: 1fr 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  div[style*="padding: \"6rem 2rem\""] {
+    padding: 5rem 1.5rem 3rem !important;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column !important;
+    padding: 2rem 1.5rem !important;
+    gap: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  footer ul {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+}
